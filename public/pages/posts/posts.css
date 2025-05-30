@@ -1,0 +1,25 @@
+.lyricPost{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.lyrics{
+    border: 1px solid var(--grey);
+    background-color: black;
+    color: white;
+    margin-top: 0.8rem;
+    padding: var(--padding);
+}
+
+.lyricsPosting img{
+    width: 3rem; margin: 0 auto 0 auto;
+}
+
+/* RESPONSIVE */
+@media screen and (min-width: 0px) and (max-width: 640px){
+    .container, .section-content{
+        padding: 0;
+    }
+}
+

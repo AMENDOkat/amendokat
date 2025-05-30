@@ -1,0 +1,17 @@
+section > p{
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+}
+
+p{ text-align: center; }
+
+section:not(:last-of-type){ margin-bottom: 2.5rem; }
+
+img{
+    width: 20rem;
+    margin: 1rem auto 1.5rem auto;
+}
+
+@media screen and (min-width: 0px) and (max-width: 640px){
+    img{ width: 20rem; }
+}

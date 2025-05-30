@@ -1,0 +1,16 @@
+.table-of-contents nav ol{
+    border-left: var(--link-border);
+    padding: 0.2rem 0.2rem 0 0.1rem;
+    margin: 0.3rem 0 0.5rem 0.2rem; 
+}
+
+.table-of-contents nav ol li:not(.subContents){
+    list-style-type: circle;
+    color: var(--purple);
+}
+
+.table-of-contents nav ol li:not(.subContents):hover{ list-style-type: disc; }
+
+.table-of-contents ol li{
+    padding-left: 1rem;
+}

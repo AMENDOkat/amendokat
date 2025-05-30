@@ -1,0 +1,13 @@
+.galleryItem{
+    max-width: 9.5rem;
+}
+
+#quizResults img{
+    width: 25rem;
+    margin: var(--center-img);
+}
+
+.content_text_img .mouseoverTxt{
+    color: var(--grey);
+    font-style: italic;
+}

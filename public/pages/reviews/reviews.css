@@ -1,0 +1,11 @@
+
+/* ------INDIVIDUAL PAGES----- */
+.title_img{
+    width: 20rem;
+    margin: var(--center-img);
+}
+
+.subtitle_img{
+    width: 13rem;
+    margin: var(--center-img);
+}

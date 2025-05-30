@@ -1,0 +1,237 @@
+/* QUOTE */
+.quote{
+    flex: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.quote .container{
+    padding: 0.3rem;
+    border: var(--border-1);
+    margin: 1.5rem 1.5rem 0 1.5rem;
+    box-shadow: -5px 10px 20px black;
+}
+
+.quote h2{
+    margin: 0;
+    padding: 0.4rem 0 0.4rem 0;
+    margin-bottom: 0.3rem;
+    font-size: 1.17rem;
+}
+
+/* WELCOME */
+#welcome{ text-align: center; }
+
+#welcome img{
+    width: 4rem;
+    margin: var(--center-img);
+}
+
+/* ABOUT ME */
+#aboutMe .section-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#aboutMe .main{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+#aboutMe .main img{
+    width: 10rem;
+    max-height: 10rem;
+}
+
+#aboutMe .graphicswall{
+    flex-direction: row;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+/* GRAPHICS STAMPS BUTTONS BLINKIES */
+.graphicswall{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.graphicswall img{
+    display: inline-block;
+}
+
+.graphicswall img:not(.blinkies img){
+    width: 6rem;
+}
+
+.blinkies img{
+    width: 10.5rem;
+}
+
+#graphics{ 
+    text-align: center; 
+    margin: 1.5rem;
+}
+
+/* LINK ME */
+textarea{
+    width: 15rem;
+    margin: 0.5rem 0 0.8rem 0;
+}
+
+#linkBtn{
+    display: block;
+    padding: 0.4rem;
+    border-radius: 0;
+    border: 2px solid var(--dark-purple);
+    background-color: var(--wine);
+    color: var(--light-purple);
+    box-shadow: -3px 2px 1px black;
+}
+
+#linkBtn:active{
+    border: 2px solid var(--grape-purple);
+    background-color: #450b30;
+    color: var(--dark-purple);
+}
+
+#linkme img{
+    width: 6rem;
+}
+
+/* THING OF THE WHENEVER */
+#totw .section-content{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.totw, .totw button > span{
+    font-family: Minecraft;
+}
+
+.totw{
+    width: 30rem;
+    border: 1px solid #000;
+}
+
+.totw, .totw_frame{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.totw_outtaframe{
+    background-color: var(--grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.totw_frametitle{
+    color: #000;
+    align-self: baseline;
+    margin: 0.3rem 0 0.5rem 1rem;
+    font-size: large;
+    width: 5rem;
+    font-weight: bold;
+}
+
+.totw_frame{
+    image-rendering: pixelated;
+    background-color: #FFF;
+    border: 1px solid #000;
+    width: 28rem;
+    height: 13rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.totw_content{
+    width: 9rem;
+}
+
+.totw_content a:hover img{
+    filter: none;
+}
+
+.totw_framebtns{
+    display: flex;
+    gap: 3rem;
+}
+
+.totw_framebtns button{
+    padding: 0.3rem;
+    border-radius: 0;
+    background-color: var(--grey);
+    box-shadow: -3px 2px 1px #282828;
+    margin: 0.5rem auto 1rem auto;
+}
+
+.totw_framebtns button:last-of-type{
+    padding: 0.3rem 1rem 0.3rem 1rem;
+}
+
+.totw_windowtitle button{
+    background-color: var(--grey);
+    box-shadow: 1px 1px #282828;
+    padding: 0.1rem 0.3rem 0.1rem 0.3rem;
+    font-weight: bold;
+}
+
+.totw_windowtitle{
+    display: flex;
+    justify-content: space-between;
+    background: #000080;
+    width: 100%;
+    padding: 0.2rem 0.2rem 0.2rem 0.4rem;
+}
+
+#totw_creature{ display: none; }
+
+/* FAUX BUTTON */
+.faux-button-img{
+    background-color: transparent;
+    border-width: 0;
+}
+
+.mouseoverTxt{
+    font-style: italic;
+}
+
+/* RESPONSIVE */
+@media screen and (min-width: 0px) and (max-width: 640px){
+    .quote .container{
+        width: 100%;
+        margin: var(--margin) 0 var(--margin) 0;
+        border-width: 1px 0 1px 0;
+    }
+
+    #aboutMe .main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #featuredpg .cardPreview{
+        border-width: 0;
+    }
+
+    .totw_frame{
+        border-width: 1px 0 1px 0;
+    }
+
+    .totw_frametitle{
+        align-self: baseline;
+        width: inherit;
+        margin: 0.3rem 0 0.5rem 0.5rem;
+    }
+
+    #linkBtn{
+        margin: var(--center-img);
+    }
+}

@@ -1,0 +1,35 @@
+main{
+    text-align: center;
+}
+
+p{
+    padding-top: 2rem;
+}
+
+img{
+    width: 6rem;
+}
+
+figure{
+    display: inline-block;
+}
+
+figcaption{
+    font-style: normal;
+}
+
+.category_wrapper a:is(:hover, :focus) figcaption{
+    text-decoration: underline;
+}
+
+.library-categories{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.category_wrapper{
+    width: 10rem;
+    margin: 1rem;
+}

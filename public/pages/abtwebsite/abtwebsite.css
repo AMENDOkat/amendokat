@@ -1,0 +1,17 @@
+main li:not(.changelog li){
+    list-style-position: inside;
+    list-style-type: disc;
+    margin: 0.5rem 0 1rem 0;
+}
+
+img{
+    width: 5rem;
+    display: inline-block;
+}
+
+#siteStatistics p{
+    border-top: 3px double var(--grey);
+    text-align: center;
+    margin-top: var(--margin);
+    padding: 0.7rem;
+}
