@@ -40,6 +40,6 @@ document.getElementById("closeWindowBtn").onclick = function() {
 
 // Snoopy bark
 document.getElementById("snupi").onclick = function(){
-    var audio = new Audio('https://amendokat.github.io/amendokat/assets/audio/bark.mp3');
+    var audio = new Audio('https://amendokat.github.io/assets/audio/bark.mp3');
     audio.play();
 }
