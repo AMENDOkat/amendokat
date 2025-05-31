@@ -7,7 +7,7 @@ body{
     line-height: 1.5;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 0.04rem;
-    background: #440b56 url(/public/assets/img/background.webp) center;
+    background: #440b56 url("/public/assets/img/background.webp") center;
     background-size: auto;
     color: var(--offwhite);
 }
@@ -33,7 +33,6 @@ body{
 
 img{
     width: 100%;
-    max-width: 100%;
     height: auto;
     display: block;
 }
@@ -77,7 +76,11 @@ button > span{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-@font-face{font-family: Minecraft; src: url(/public/assets/fonts/Minecraft.woff2);}
+@font-face{
+    font-family: Minecraft; 
+    src: local("Minecraft"), url("/public/assets/fonts/Minecraft.woff2") format("woff2");
+    font-display: swap;
+}
 
 h1{ line-height: 2rem; }
 
@@ -132,7 +135,7 @@ header .container{
 }
 
 .banner{
-    background: transparent url(/public/assets/img/banner-lowres.webp) no-repeat 50% 60%;
+    background: transparent url("/public/assets/img/banner-lowres.webp") no-repeat 50% 60%;
     background-size: cover;
     height: 7rem;
 }
@@ -352,6 +355,7 @@ footer .container{
 
 .cardInfo .poster{
     width: 15rem;
+    max-width: 100%;
 }
 
 .cardInfoEx li{
@@ -427,7 +431,7 @@ footer .container{
 }
 
 @media screen and (min-width: 641px){
-    .banner{ background-image: url(/public/assets/img/banner-highres.webp); }
+    .banner{ background-image: url("/public/assets/img/banner-highres.webp"); }
 }
 
 @media screen and (min-width: 0px) and (max-width: 640px){
@@ -489,7 +493,7 @@ footer .container{
 
     header h1{
         position: relative;
-        background: var(--offblack) url(/public/assets/img/banner-lowres.webp);
+        background: var(--offblack) url("/public/assets/img/banner-lowres.webp");
         background-size: cover;
         background-blend-mode: multiply;
         text-shadow: 2px 2px black;
