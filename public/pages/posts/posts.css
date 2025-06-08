@@ -12,14 +12,6 @@
     padding: var(--padding);
 }
 
-.lyricsPosting img{
+.lyricPost img{
     width: 3rem; margin: 0 auto 0 auto;
 }
-
-/* RESPONSIVE */
-@media screen and (min-width: 0px) and (max-width: 640px){
-    .container, .section-content{
-        padding: 0;
-    }
-}
-

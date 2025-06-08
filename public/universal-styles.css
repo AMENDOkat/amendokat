@@ -168,6 +168,7 @@ main{
     padding-left: 1rem;
 }
 
+/* fix this shit code */
 .section-content > section:not(#aboutMe, #graphics, #welcome){
     margin-top: 2.5rem;
 }
@@ -391,8 +392,9 @@ footer .container{
 }
 
 .datePosted{
-    color: grey; 
-    font-size: 0.865em;
+    font-size: 0.75em;
+    color: var(--grey);
+    font-style: italic;
     margin-top: 0.5rem;
 }
 
@@ -418,6 +420,29 @@ footer .container{
 
 .changelog time{ font-weight: bold; }
 
+/* GRAPHICS LINE */
+.graphicsLine{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    align-items: center;
+}
+
+.graphicsLine img{
+    display: inline-block;
+}
+
+
+.stamps img, .buttons img{
+    width: 5.5rem;
+}
+
+.blinkies img{
+    width: 9.5rem;
+}
+
+
 /* COLORED TEXT */
 .red-txt{color: red;}
 .grey-txt{color: var(--grey);}
@@ -434,7 +459,7 @@ footer .container{
     .banner{ background-image: url("/public/assets/img/banner-highres.webp"); }
 }
 
-@media screen and (min-width: 0px) and (max-width: 640px){
+@media screen and (min-width: 0px) and (max-width: 640px){ 
     .mobile{
         display: inline-block;
     }
@@ -508,17 +533,26 @@ footer .container{
         padding: 0.5rem;
     }
     
-    .section-content > section:not(#aboutMe, #graphicsWall, #welcome){
+    /* fix this shit code */
+    .section-content > section:not(#aboutMe, #graphicsWall, #welcome){ 
         margin-top: 1.5rem;
     }
 
     .footer_categories_wrapper:last-of-type{ margin-bottom: 0.3rem; }
+
+    footer li, header li{
+       padding: 0.15rem;
+    }
 
     .cardPreview{
         flex-direction: column;
         justify-content: center;
         align-items: center;
         border-width: 1px 0 1px 0;
+    }
+
+    .cardPreview:not(:last-of-type){
+        margin-bottom: 2.6rem;
     }
 
     .cardPreview:last-of-type{
@@ -530,5 +564,13 @@ footer .container{
         border-bottom: 1px dotted var(--grey);
         width: 100%;
         max-width: 100%;
+    }
+
+    .text_img:not(:last-of-type){
+        margin-bottom: 1.4rem;
+    }
+
+    .graphicsLine{ 
+        justify-content: center;
     }
 }

@@ -14,3 +14,9 @@
 .table-of-contents ol li{
     padding-left: 1rem;
 }
+
+@media screen and (min-width: 0px) and (max-width: 640px){
+    body .table-of-contents{
+        text-align: start;
+    }
+}

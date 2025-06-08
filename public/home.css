@@ -1,3 +1,20 @@
+/* WELCOME */
+.faux-button-img{
+    background-color: transparent;
+    border-width: 0;
+}
+
+.mouseoverTxt{
+    font-style: italic;
+}
+
+#welcome{ text-align: center; }
+
+#welcome img{
+    width: 4rem;
+    margin: var(--center-img);
+}
+
 /* QUOTE */
 .quote{
     flex: 100%;
@@ -17,14 +34,6 @@
     padding: 0.4rem 0 0.4rem 0;
     margin-bottom: 0.3rem;
     font-size: 1.17rem;
-}
-
-/* WELCOME */
-#welcome{ text-align: center; }
-
-#welcome img{
-    width: 4rem;
-    margin: var(--center-img);
 }
 
 /* ABOUT ME */
@@ -49,56 +58,6 @@
 #aboutMe .graphicswall{
     flex-direction: row;
     gap: 0.3rem;
-}
-
-/* GRAPHICS STAMPS BUTTONS BLINKIES */
-.graphicswall{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.graphicswall img{
-    display: inline-block;
-}
-
-.graphicswall img:not(.blinkies img){
-    width: 6rem;
-}
-
-.blinkies img{
-    width: 10.5rem;
-}
-
-#graphics{ 
-    text-align: center; 
-    margin: 1.5rem;
-}
-
-/* LINK ME */
-textarea{
-    width: 15rem;
-    margin: 0.5rem 0 0.8rem 0;
-}
-
-#linkBtn{
-    display: block;
-    padding: 0.4rem;
-    border-radius: 0;
-    border: 2px solid var(--dark-purple);
-    background-color: var(--wine);
-    color: var(--light-purple);
-    box-shadow: -3px 2px 1px black;
-}
-
-#linkBtn:active{
-    border: 2px solid var(--grape-purple);
-    background-color: #450b30;
-    color: var(--dark-purple);
-}
-
-#linkme img{
-    width: 6rem;
 }
 
 /* THING OF THE WHENEVER */
@@ -192,14 +151,46 @@ textarea{
 
 #totw_creature{ display: none; }
 
-/* FAUX BUTTON */
-.faux-button-img{
-    background-color: transparent;
-    border-width: 0;
+/* LINK ME */
+textarea{
+    width: 15rem;
+    margin: 0.6rem 0 0.8rem 0;
 }
 
-.mouseoverTxt{
-    font-style: italic;
+#linkBtn{
+    display: block;
+    padding: 0.4rem;
+    border-radius: 0;
+    border: 2px solid var(--dark-purple);
+    background-color: var(--wine);
+    color: var(--light-purple);
+    box-shadow: -3px 2px 1px black;
+}
+
+#linkBtn:active{
+    border: 2px solid var(--grape-purple);
+    background-color: #450b30;
+    color: var(--dark-purple);
+}
+
+#linkme img{
+    width: 5.5rem;
+}
+
+/* GRAPHICS STAMPS BUTTONS BLINKIES */
+.graphicswall{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.graphicswall img{
+    display: inline-block;
+}
+
+#graphics{ 
+    text-align: center; 
+    margin: 1.5rem;
 }
 
 /* RESPONSIVE */
@@ -230,7 +221,7 @@ textarea{
         margin: 0.3rem 0 0.5rem 0.5rem;
     }
 
-    #linkBtn{
+    #linkme button, #linkme img{
         margin: var(--center-img);
     }
 }
