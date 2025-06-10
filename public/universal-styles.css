@@ -218,7 +218,7 @@ details[open] summary{ color: var(--light-purple); }
 }
 
 .galleryItem{
-    max-width: 15rem;
+    max-width: 10rem;
 }
 
 .imgGallery img{
@@ -433,15 +433,20 @@ footer .container{
     display: inline-block;
 }
 
+.stamps img{
+    width: 99px;
+    height: 56px;
+}
 
-.stamps img, .buttons img{
-    width: 5.5rem;
+.buttons img{
+    width: 88px;
+    height: 31px;
 }
 
 .blinkies img{
-    width: 9.5rem;
+    width: 150px;
+    height: 20px;
 }
-
 
 /* COLORED TEXT */
 .red-txt{color: red;}
