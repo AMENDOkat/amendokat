@@ -334,11 +334,12 @@ footer .container{
 }
 
 .cardInfo{
-    min-width: 8.4rem;
-    max-width: 11.5rem;
+    min-width: 11rem;
+    max-width: 11rem;
 }
 
 .cardInfoEx{
+    min-width: 13rem;
     max-width: 13rem;
 }
 
@@ -396,14 +397,14 @@ footer .container{
     color: var(--grey);
     font-style: italic;
     margin-top: 0.5rem;
+    border-top: 1px dotted var(--grey);
+    padding-top: 0.15rem;
 }
 
 .imgPost{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
 .contentImg{
