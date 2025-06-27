@@ -1,4 +1,4 @@
 # AMENDOKAT &#9733;
 
 Official repository and file hosting for https://amendokat.neocities.org/  
-Also serves as a mirror.
+You can also find the github mirror of said site on https://amendokat.github.io/public/index.html
