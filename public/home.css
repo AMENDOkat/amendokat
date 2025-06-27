@@ -160,13 +160,6 @@
     padding: 0.3rem 1rem 0.3rem 1rem;
 }
 
-.totw_windowtitle button{
-    background-color: var(--grey);
-    box-shadow: 1px 1px #282828;
-    padding: 0.1rem 0.3rem 0.1rem 0.3rem;
-    font-weight: bold;
-}
-
 .totw_windowtitle{
     display: flex;
     justify-content: space-between;
@@ -175,7 +168,17 @@
     padding: 0.2rem 0.2rem 0.2rem 0.4rem;
 }
 
-#totw_creature{ display: none; }
+.totw_windowtitle button{
+    background-color: var(--grey);
+    padding: 0.1rem 0.3rem 0.1rem 0.3rem;
+    font-weight: bold;
+}
+
+.totw_windowtitle button:disabled{
+    border-color: grey;
+}
+
+#totw_creature{display: none;}
 
 /* LINK ME */
 textarea{
@@ -191,6 +194,10 @@ textarea{
     background-color: var(--wine);
     color: var(--light-purple);
     box-shadow: -3px 2px 1px black;
+}
+
+#linkBtn:hover{
+    border-color: var(--purple);
 }
 
 #linkBtn:active{

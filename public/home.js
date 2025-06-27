@@ -1,16 +1,15 @@
 // Random quote
-const quotes = [
-    "You chucked me out like I was trash. For that you should be dead. But! But! But! Then it hit me like a flash! What if high school went away instead?",
-    "The Phantom of the Opera is there, inside your mind!",
-    "This is counter-culture from the underground. Eternal revolution, this is our sound. KMFDM, better than the best. Megalomaniacal and harder than the rest",
-    "That's a sharp outfit, Chan. Careful, you could puncture the hull of an empire-class Fire Nation battleship, leaving thousands to drown at sea... Because... It's so sharp.",
-    "You know, you ponies got it all wrong, friendship isn't magic, it's power."
-];
-const randomQuote = document.getElementById("randomQuote");
-const random = Math.floor(Math.random() * quotes.length);
-
 window.onload = function(){
-    document.getElementById("randomQuote").textContent = quotes[random];
+    const quotes = [
+        "You chucked me out like I was trash. For that you should be dead. But! But! But! Then it hit me like a flash! What if high school went away instead?",
+        "The Phantom of the Opera is there, inside your mind!",
+        "This is counter-culture from the underground. Eternal revolution, this is our sound. KMFDM, better than the best. Megalomaniacal and harder than the rest",
+        "That's a sharp outfit, Chan. Careful, you could puncture the hull of an empire-class Fire Nation battleship, leaving thousands to drown at sea... Because... It's so sharp.",
+        "You know, you ponies got it all wrong, friendship isn't magic, it's power."
+    ];
+    const randomQuote = document.getElementById("randomQuote");
+    const random = Math.floor(Math.random() * quotes.length);
+    randomQuote.textContent = quotes[random];
 }
 
 // Copy textarea link to clipboard
